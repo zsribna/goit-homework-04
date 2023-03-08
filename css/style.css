@@ -71,9 +71,7 @@ body {
 
 .list_osn {
     list-style: none;
-    /*в один рядок */
     display: flex;
-
 }
 
 .header_link {
@@ -146,7 +144,8 @@ body {
     padding: 188px 0;
     text-align: center;
     color: var(--white-color);
-    background: var(--blue-color);
+    /*background: var(--blue-color);*/
+    background-image: url(../images/people-office.jpg);
 }
 
 .fon_text {
