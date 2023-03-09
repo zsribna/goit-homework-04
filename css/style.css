@@ -15,6 +15,27 @@ body {
     background-color: var(--white-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.list_item {}
+
 .header_line {
     border-bottom: 1px solid var(--second-btn-color);
 }
@@ -71,7 +92,10 @@ body {
 
 .list_osn {
     list-style: none;
+    /*в один рядок */
     display: flex;
+    padding: 24px 0;
+    gap: 24px;
 }
 
 .header_link {
@@ -84,11 +108,7 @@ body {
     color: var(--blue-color);
     text-decoration: none;
     color: inherit;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     padding: 24px 0px;
-    margin-left: 40px;
 }
 
 .header_link:hover {
@@ -144,8 +164,7 @@ body {
     padding: 188px 0;
     text-align: center;
     color: var(--white-color);
-    /*background: var(--blue-color);*/
-    background-image: url(../images/people-office.jpg);
+    background: var(--blue-color);
 }
 
 .fon_text {
@@ -192,6 +211,9 @@ body {
 
 .features_osn_list {
     display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
 }
@@ -210,7 +232,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 400;
-    margin-right: 24px;
     color: var(--blue-color);
 }
 
@@ -233,11 +254,9 @@ body {
     display: flex;
     list-style: none;
     text-decoration: none;
-    margin-left: 24px;
-}
-
-.works-list_element {
-    margin-left: 24px;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .section-item {
@@ -258,15 +277,14 @@ body {
     display: flex;
     list-style: none;
     text-decoration: none;
-}
+    gap: 24px;
 
-.teams_list_element {
-    margin-left: 24px;
 }
 
 .text-teamm {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-color: var(--white-color);
 }
 
 .text-teamm-title {
@@ -336,7 +354,7 @@ body {
 
 .section-pre {
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
 }
 
 .list_button {
@@ -344,6 +362,7 @@ body {
     list-style: none;
     justify-content: center;
     margin-bottom: 72px;
+    gap: 24px;
 }
 
 .list_button_element {
@@ -359,7 +378,6 @@ body {
     text-align: center;
     justify-content: center;
     padding: 12px 24px;
-    margin-left: 24px;
     border: none;
     flex: none;
     order: 0;
