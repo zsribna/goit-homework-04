@@ -6,7 +6,8 @@
     --accent-color: #4D5AE5;
     --blue-color: #2E2F42;
     --white-color: #ffffff;
-    /*--footer-text: #E7E9FC;*/
+    --text-company-color: #8E8F99;
+    --soc-focus-color: #31D0AA;
 }
 
 body {
@@ -34,7 +35,6 @@ img {
     display: block;
 }
 
-.list_item {}
 
 .header_line {
     border-bottom: 1px solid var(--second-btn-color);
@@ -50,12 +50,38 @@ img {
 .cont {
     display: flex;
 }
+.item-pre::before {
+    display: block;
+    content: "";
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+}
+.icon-antena::before {
+    background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagrama::before {
+    background-image: url(../images/diagrama.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
 
 .header-navigation {
     display: flex;
     align-items: center;
     margin-right: auto;
-    margin-left: 24px;
     padding: 0px;
 }
 
@@ -128,7 +154,6 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
     padding: 24px 0px;
-    margin-left: 40px;
 }
 
 .header-mail:hover {
@@ -149,7 +174,7 @@ img {
     text-decoration: none;
     font-style: normal;
     padding: 24px 0px;
-    margin-left: 40px;
+
 }
 
 .header-tel:hover {
@@ -165,6 +190,13 @@ img {
     text-align: center;
     color: var(--white-color);
     background: var(--blue-color);
+    background-image: linear-gradient(to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .fon_text {
@@ -196,6 +228,10 @@ img {
 
 .fon_btn:hover {
     background-color: var(--variable-color);
+}
+
+.fon_btn:focus {
+    color: var(--variable-color);
 }
 
 .section {
@@ -306,6 +342,88 @@ img {
     text-align: center;
     color: var(--primary-text-color);
 }
+.text_soc_list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.soc_list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.section-company {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+.section-soc-title{
+    width: 40px;
+    height: 40px;
+}
+.section-soc-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+}
+
+.section-soc-link:hover{
+    background-color: var(--variable-color);
+}
+.team_link{
+    text-decoration: none;
+    color: inherit;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--blue-color);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+/*основне заоишити */
+.section-comp-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.section-comp-title {
+    width: calc((100%-120px)/6);
+    height: 88px;
+}
+.icon-company-link {
+    color: var(--text-company-color)
+}
+.icon-company {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--text-company-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    padding: 16px 32px;
+
+}
+
+.icon-company:is(:hover, :focus) {
+    border-color: var(--variable-color);
+    fill: var(--variable-color);
+}
+
+
 
 .footer_osn {
     padding: 100px 0;
@@ -344,18 +462,77 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-btn-color);
-    width: calc((100%-60px) / 4);
+    width: 264px;
 }
 
 .fot_osn {
     text-decoration: none;
+    
+}
+.footer-container{
+    display: flex;
+}
+.footer_social_title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+.footer-social-media{
+    display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+}
+.footer_social_list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.footer_list{
+ display: flex;
+ gap:26px;
 }
 
-
+.footer_list_element{
+    width: 40px;
+    height: 40px;
+}
+.footer_list_element_link{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+}
+.footer_list_element_link:hover{
+     background-color: var(--soc-focus-color);
+}
+.link_footer{
+    text-decoration: none;
+    color: inherit;
+    font-family: "Roboto",
+    sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--blue-color);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 .section-pre {
     padding-top: 96px;
     padding-bottom: 120px;
 }
+
 
 .list_button {
     display: flex;
@@ -372,7 +549,6 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    margin-left: 40px;
     letter-spacing: 0.04em;
     align-items: center;
     text-align: center;
@@ -385,19 +561,22 @@ img {
     color: var(--accent-color);
     background: var(--second-btn-color);
 }
+.list_button_element:hover{
+    color: var(--white-color);
+    background: var(--variable-color);
+}
 
 .section-portfolio2 {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -48px;
     list-style: none;
     justify-content: center;
+    gap: 48px 24px;
 }
 
 .section-list-item2 {
-    margin-bottom: 48px;
     background: var(--white-color);
-    margin-left: 24px;
+
 }
 
 .gallery2 {
@@ -419,4 +598,12 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+}
+.shadow {
+    display: block;
+    text-decoration: none;
+}
+
+.shadow:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
