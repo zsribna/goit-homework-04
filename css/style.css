@@ -36,9 +36,6 @@ img {
 }
 
 
-.header_line {
-    border-bottom: 1px solid var(--second-btn-color);
-}
 
 .container {
     max-width: 1158px;
@@ -77,6 +74,9 @@ img {
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
 }
+.header_line {
+    border-bottom: 1px solid var(--second-btn-color);
+}
 
 .header-navigation {
     display: flex;
@@ -97,7 +97,7 @@ img {
     color: var(--blue-color);
     display: flex;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 76px;
 }
 
 .header_span {
@@ -120,7 +120,6 @@ img {
     list-style: none;
     /*в один рядок */
     display: flex;
-    padding: 24px 0;
     gap: 24px;
 }
 
@@ -131,6 +130,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: block;
     color: var(--blue-color);
     text-decoration: none;
     color: inherit;
@@ -150,6 +150,7 @@ img {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    display: block;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -173,6 +174,7 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
+    display: block;
     padding: 24px 0px;
 
 }
@@ -184,8 +186,11 @@ img {
 .header-tel:focus {
     color: var(--variable-color);
 }
+/*hero  */
 
 .hero_title {
+    max-width: 1440px;
+    max-height: 600px;
     padding: 188px 0;
     text-align: center;
     color: var(--white-color);
@@ -227,11 +232,13 @@ img {
 }
 
 .fon_btn:hover {
-    background-color: var(--variable-color);
+    background: var(--accent-color);
+    color: var(--second-btn-color);
 }
 
 .fon_btn:focus {
-    color: var(--variable-color);
+    background: var(--accent-color);
+    color: var(--second-btn-color);
 }
 
 .section {
@@ -261,6 +268,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--blue-color);
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .features_osn_list_text {
@@ -300,7 +308,10 @@ img {
 }
 
 .section_teams {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
+     font-size: 36px;
     text-align: center;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -341,6 +352,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 .text_soc_list{
     display: flex;
@@ -374,6 +386,9 @@ img {
 .section-soc-link:hover{
     background-color: var(--variable-color);
 }
+.section-soc-link:focus {
+    background-color: var(--variable-color);
+}
 .team_link{
     text-decoration: none;
     color: inherit;
@@ -388,7 +403,7 @@ img {
     order: 0;
     flex-grow: 0;
 }
-/*основне заоишити */
+
 .section-comp-list{
     display: flex;
     justify-content: center;
@@ -398,31 +413,28 @@ img {
     text-decoration: none;
 }
 .section-comp-title {
-    width: calc((100%-120px)/6);
+    width: calc((100% - 120px ) / 6);
     height: 88px;
 }
 .icon-company-link {
-    color: var(--text-company-color)
-}
-.icon-company {
+    color: var(--text-company-color);
     width: 100%;
     height: 100%;
-
     border: 1px solid var(--text-company-color);
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: currentColor;
     padding: 16px 32px;
-
+}
+.icon-company {
+    fill: currentColor;
 }
 
 .icon-company:is(:hover, :focus) {
     border-color: var(--variable-color);
     fill: var(--variable-color);
 }
-
 
 
 .footer_osn {
@@ -500,15 +512,12 @@ img {
 .footer_list_element{
     width: 40px;
     height: 40px;
-}
-.footer_list_element_link{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    
 }
 .footer_list_element_link:hover{
      background-color: var(--soc-focus-color);
@@ -524,9 +533,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--blue-color);
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    display: flex;
 }
 .section-pre {
     padding-top: 96px;
@@ -550,15 +557,12 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    align-items: center;
     text-align: center;
     justify-content: center;
     padding: 12px 24px;
-    border: none;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    color: var(--accent-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    color: var(--secondary-background-color);
     background: var(--second-btn-color);
 }
 .list_button_element:hover{
