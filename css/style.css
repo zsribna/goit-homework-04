@@ -48,7 +48,6 @@ img {
     width: 264px;
     height: 112px;
     background: #f4f4fd;
-    border-radius: 4px;
     background-size: 64px;
     background-repeat: no-repeat;
     background-position: center;
@@ -137,7 +136,7 @@ img {
     color: var(--variable-color);
 }
 
-.header-link:focus {
+.header_link:focus {
     color: var(--variable-color);
 }
 
@@ -226,17 +225,16 @@ img {
     padding: 16px 32px;
     margin-top: 48px;
     color: var(--white-color);
-    background-color: var(--variable-color);
+    background-color:var(--accent-color); ;
 }
 
 .fon_btn:hover {
-    background: var(--accent-color);
+    background: var(--variable-color);
    
 }
 
 .fon_btn:focus {
-    background: var(--accent-color);
-   
+    background: var(--variable-color);
 }
 
 .section {
@@ -304,7 +302,6 @@ img {
 .section-item {
     background: var(--secondary-background-color);
 }
-
 .section_teams {
     font-family: 'Roboto';
     font-style: normal;
@@ -314,7 +311,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--second-title-color);
+    color: var(--blue-color);
     margin-bottom: 72px;
 }
 
@@ -366,10 +363,12 @@ img {
 .section-company {
     padding-top: 130px;
     padding-bottom: 120px;
+    
 }
 .section-soc-title{
     width: 40px;
     height: 40px;
+    border-radius: 0px 0px 4px 4px;
 }
 .section-soc-link{
     width: 100%;
@@ -512,29 +511,25 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     
 }
-.footer_list_element_link:hover{
-     background-color: var(--soc-focus-color);
-}
-.footer_list_element_link:focus {
-    background-color: var(--soc-focus-color);
-}
-.link_footer{
-    text-decoration: none;
-    color: inherit;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--blue-color);
-    display: flex;
-}
 .section-pre {
     padding-top: 96px;
     padding-bottom: 120px;
 }
 
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:is(:hover, :focus) {
+
+    background-color: var(--soc-focus-color);
+}
 
 .list_button {
     display: flex;
