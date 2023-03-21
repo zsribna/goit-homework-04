@@ -113,9 +113,8 @@ img {
 
 .list_osn {
     list-style: none;
-    /*в один рядок */
     display: flex;
-    gap: 24px;
+    gap: 40px;
 }
 
 .header_link {
@@ -320,7 +319,7 @@ img {
     list-style: none;
     text-decoration: none;
     gap: 24px;
-
+    border-radius: 0px 0px 4px 4px;
 }
 
 .text-teamm {
@@ -368,7 +367,7 @@ img {
 .section-soc-title{
     width: 40px;
     height: 40px;
-    border-radius: 0px 0px 4px 4px;
+
 }
 .section-soc-link{
     width: 100%;
